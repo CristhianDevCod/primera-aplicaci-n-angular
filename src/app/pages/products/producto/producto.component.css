@@ -1,0 +1,31 @@
+.card {
+    max-width: 300px;
+}
+
+mat-card-title {
+	color: #871487;
+}
+
+span {
+	color: #f3f3f3f3;
+}
+
+p:not(span){
+	color: #FFD700
+}
+
+.listado{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+
+.category p, mat-chip {	
+	display: inline;
+	margin-right: 2rem;
+}
+.category {
+	margin-bottom: 1rem;
+	margin-left: 1rem;
+}

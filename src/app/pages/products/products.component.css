@@ -1,0 +1,11 @@
+h2 {
+    text-align: center;
+}
+
+mat-button-toggle-group mat-button-toggle {
+    background-color: darkmagenta;
+}
+
+mat-button-toggle-group {
+    margin-bottom: 2rem;
+}

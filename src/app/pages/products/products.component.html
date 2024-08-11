@@ -1,0 +1,21 @@
+<h2 class="my-5">Catalogo de productos</h2>
+
+<!-- Mostrar las categorías -->
+<!-- Se utiliza el paréntesis para hablar de eventos -->
+<mat-button-toggle-group (valueChange)="onCategoryChange($event)">
+    <mat-button-toggle value="" checked>all</mat-button-toggle>
+    @for (categoria of categorias; track categoria){
+        <mat-button-toggle [value]="categoria">{{categoria}}</mat-button-toggle>
+    }
+</mat-button-toggle-group>
+
+
+<div class="row d-flex justify-content-center">
+
+@for (producto of productos; track producto.id) {
+    <div class="col">
+        <app-producto [producto]="producto"/>
+    </div>
+}
+
+</div>

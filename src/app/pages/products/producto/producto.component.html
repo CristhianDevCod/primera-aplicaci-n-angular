@@ -1,0 +1,24 @@
+<mat-card class="card mb-3">
+    <div class="p-3">
+        <p class="text-center">{{ producto.title.substring(0, 20) }}</p>
+    </div>
+    <div class="category">
+        <p>Category:</p>
+        <mat-chip>{{ producto.category }}</mat-chip>
+    </div>
+    <img class="object-fit-cover" mat-card-image [src]="producto.image" [alt]="producto.title" />
+    <p class="me-3 mt-3 text-end">Price: <span>{{ '$' + producto.price }}</span></p
+    >
+    <mat-card-content class="px-3 pb-3">
+        <p> Description: <span>{{ producto.description.substr(0, 70) + '...' }}</span></p>
+    </mat-card-content>
+    <mat-card-actions class="d-flex justify-content-end mb-3 me-3">
+        <button mat-button class="me-3 rounded px-1" (click)="addToCart()">
+            <mat-icon matListItemIcon>shopping_cart</mat-icon>
+        </button>
+        <!-- Agregarle un evento a un botón -->
+        <button mat-button class="rounded px-1" (click)="viewItem()">
+            <mat-icon matListItemIcon>visibility</mat-icon>
+        </button>
+    </mat-card-actions>
+</mat-card>

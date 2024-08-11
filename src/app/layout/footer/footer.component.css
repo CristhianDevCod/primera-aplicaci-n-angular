@@ -1,0 +1,13 @@
+.text-center {
+	text-align: center;
+}
+
+a {
+	color: blueviolet;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+}
